@@ -1,0 +1,58 @@
+.page_chat {
+    background-color: #C5DBCA;
+    overflow: hidden;
+  }
+  
+  .chatbox {
+    background-color: #A48B78;
+    overflow-y: auto;
+    height: 50%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  
+  }
+  
+  .chatbox::-webkit-scrollbar {
+    display: none;
+  }
+  
+  
+  .chatbox .message {
+    display: flex;
+    list-style: none;
+    margin: 10px;
+  }
+  
+  .chatbox .user {
+    justify-content: flex-end;
+  }
+  
+  .chatbox .user .content {
+    border-radius: 10px 10px 0 10px;
+  }
+  
+  .chatbox .pet {
+    justify-content: flex-start;
+  }
+  
+  .chatbox .pet .content {
+    border-radius: 10px 10px 10px 0;
+  }
+  
+  .chatbox .message .content {
+    white-space: pre-wrap;
+    padding: 12px 16px;
+    margin: 0;
+    max-width: 75%;
+    color: black;
+    font-size: 0.95rem;
+    background: #E8E0D3;
+  }
+  
+  /*.buttons{
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }*/

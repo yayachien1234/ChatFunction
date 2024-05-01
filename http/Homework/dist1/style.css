@@ -1,0 +1,195 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    padding: 0;
+    margin: 0;
+    background-color: #E9E1D4 !important;
+  }
+  
+  .container_phone {
+    display: block;
+    position: absolute;
+    overflow-y: hidden;
+    height: 100%;
+    margin: 0;
+  }
+  
+  @media (max-width: 56.25vh) {
+  
+    /*for phone view*/
+    .container_phone {
+      width: 100%;
+    }
+  }
+  
+  @media (min-width: 56.25vh) {
+  
+    /*for desktop view*/
+    .container_phone {
+      width: 56.25vh;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  
+  nav {
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    height: 5%;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 1000;
+  }
+  
+  .nav_left {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+  }
+  
+  @media (max-width: 600px) {
+    .nav_left {
+      font-size: 0.5em;
+    }
+  
+    .nav_middle img {
+      width: 30%;
+    }
+  }
+  
+  .nav_middle img {
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .page_home {
+    background-image: url('background/home_background.png');
+    background-position: center;
+    background-size: cover;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .nav_left {
+    left: 2%;
+  }
+  
+  ul.nav_left li {
+    position: relative;
+  }
+  
+  ul.nav_left>li {
+    float: left;
+  }
+  
+  ul.nav_left a {
+    color: black;
+    display: block;
+    padding: 0 1em;
+    text-decoration: none;
+  }
+  
+  ul.nav_left li:hover>a {
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  
+  ul.nav_left ul {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    top: 100%;
+    width: 7em;
+    padding-inline-start: 0;
+  }
+  
+  ul.nav_left li:hover>ul {
+    display: block;
+  }
+  
+  .bar {
+    position: fixed;
+    display: flex;
+    bottom: 0;
+    height: 6%;
+    width: 100%;
+    margin: 0;
+    align-items: center;
+    background-color: #ffffff;
+    z-index: 1000;
+  }
+  
+  .page_button {
+    display: block;
+    height: 85%;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .pb_home {
+    background: url("page_logo/HOME1.png") no-repeat center;
+    background-size: contain;
+  }
+  
+  .pb_chat {
+    background: url("page_logo/CHAT1.png") no-repeat center;
+    background-size: contain;
+  }
+  
+  .pb_diary {
+    background: url("page_logo/DIARY1.png") no-repeat center;
+    background-size: contain;
+  }
+  
+  .pages {
+    display: flex;
+    height: 90%;
+    width: 101%;
+    position: absolute;
+    top: 5%;
+    flex-direction: row;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .pages::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .page {
+    display: block;
+    height: 100%;
+    width: 100%;
+    /*overflow-y: auto;*/
+    margin: 0;
+    flex: 0 0 100%;
+    scroll-snap-align: start;
+  }
+  
+  .page::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .page_home {
+    background-color: darksalmon;
+  }
+  
+  .page_diary {
+    background-color: yellowgreen;
+  }
